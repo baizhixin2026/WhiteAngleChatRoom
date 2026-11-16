@@ -1,0 +1,159 @@
+/* 背景色 */
+QWidget#sideWidget { background-color: #404142; }
+QWidget#userWidget { background-color: #EEEEF0; }
+QListView#chat_userListView { border: none; background-color: #EEEEF0; }
+QTreeView#contactTreeView { border: none; background-color: #EEEEF0; }
+QListView#recentChatListView { border: none; background-color: #EEEEF0; }
+
+/* 背景色 聊天对话框 */
+QWidget#dataWidget { background-color: #F5F5F5; }
+QListView#chatMsgListView { border: none; background-color: #F5F5F5; }
+
+/* 联系人搜索按钮（+） 三态：普通/悬停/按下 */
+QPushButton#addFriendBtn {
+    border: none;
+    border-image: url(:/image/buttton/add-1.png);
+}
+QPushButton#addFriendBtn:hover {
+    border-image: url(:/image/buttton/add-2.png);
+}
+QPushButton#addFriendBtn:pressed {
+    border-image: url(:/image/buttton/add-3.png);
+}
+
+
+/* 侧边导航栏 聊天按钮 三态：普通/悬停/选中 */
+QToolButton#side_chat_toolButton {
+    border: none;
+    border-image: url(:/image/buttton/message-1.png);
+}
+QToolButton#side_chat_toolButton:hover {
+    border-image: url(:/image/buttton/message-2.png);
+}
+QToolButton#side_chat_toolButton:checked {
+    border-image: url(:/image/buttton/message-3.png);
+}
+
+
+/* 侧边导航栏 联系人按钮 三态：普通/悬停/选中 */
+QToolButton#side_contact_toolButton {
+    border: none;
+    border-image: url(:/image/buttton/contact-1.png);
+}
+QToolButton#side_contact_toolButton:hover {
+    border-image: url(:/image/buttton/contact-2.png);
+}
+QToolButton#side_contact_toolButton:checked {
+    border-image: url(:/image/buttton/contact-3.png);
+}
+
+
+/* 侧边导航栏 群组按钮 三态：普通/悬停/选中 */
+QToolButton#side_group_toolButton {
+    border: none;
+    border-image: url(:/image/buttton/group-1.png);
+}
+QToolButton#side_group_toolButton:hover {
+    border-image: url(:/image/buttton/group-2.png);
+}
+QToolButton#side_group_toolButton:checked {
+    border-image: url(:/image/buttton/group-3.png);
+}
+
+/* 待处理好友申请 */
+QPushButton#friendRequestBtn {
+    border: none;
+    border-image: url(:/image/buttton/friendRequestBtn-1.png);
+}
+QPushButton#friendRequestBtn:hover {
+    border-image: url(:/image/buttton/friendRequestBtn-2.png);
+}
+
+/* 删除好友 拉黑 */
+QToolButton#moreBtn {
+    border: none;
+    image: url(:/image/buttton/more-1.png);
+}
+QToolButton#moreBtn:pressed {
+    image: url(:/image/buttton/more-2.png);
+}
+QToolButton#moreBtn::menu-indicator {
+    image: none;
+    width: 0;
+    height: 0;
+}
+
+/* 用户默认头像 */
+QToolButton#side_user_toolButton { border: none; }
+
+/* 对话框聊天对象的名字 底部分割线 */
+QFrame#titleFrame { border: none; border-bottom: 1px solid #eeeeee; }
+/* 显示聊天对象名字 */
+QLabel#title_label { padding-left: 12px; text-align: left; }
+
+
+/* 输入区容器 */
+QFrame#inputFrame {
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+}
+
+/* 输入框 */
+QTextEdit#msg { border: none; background: transparent; }
+
+/* 发送消息按钮 */
+QPushButton#sendMsgBtn { border: none; }
+
+/* 输入区 工具栏 */
+QFrame#toolFrame { border: none; }
+
+/* 输入区 工具栏 工具按钮 */
+QFrame#toolFrame QToolButton { border: none; }
+QFrame#toolFrame QToolButton:checked { border-image: url(:/image/buttton/select-1.png);}
+QToolButton#emojiBtn { border-image: url(:/image/buttton/emoji-1.png); }
+QToolButton#fileBtn { border-image: url(:/image/buttton/file-1.png); }
+QToolButton#musicBtn { border-image: url(:/image/buttton/music-1.png); }
+QToolButton#pictureBtn { border-image: url(:/image/buttton/picture-1.png); }
+QToolButton#screenShotBtn { border-image: url(:/image/buttton/screenShot-1.png); }
+QToolButton#videoBtn { border-image: url(:/image/buttton/video-1.png); }
+
+
+/* 联系人搜索 */
+QLineEdit#searchLineEdit {
+    border-radius: 5px;
+    background-image: url(:/image/search-1.png);
+    background-repeat: no-repeat;
+    background-position: left center;   /* 图标靠左垂直居中 */
+    padding-left: 18px;                 /* 给图标留出空间，避免文字和图标重叠 */
+}
+
+/* contactTreeView 群成员选中时 蓝色 */
+QTreeView#contactTreeView {
+    show-decoration-selected: 1;
+    selection-background-color: transparent; /* 让系统默认高亮透明，完全由 QSS 控制 */
+}
+QTreeView#contactTreeView::item {
+    padding-left: 10px;   /* 让背景从最左边开始，覆盖缩进区域 */
+    border-radius: 6px;
+}
+QTreeView#contactTreeView::item:selected {
+    background-color: #0099FF;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+
+/* 垂直滚动条 */
+QScrollBar:vertical { background: transparent; width: 8px; }
+QScrollBar::handle:vertical { background: #E2E3E5; border-radius: 4px; min-height: 30px; }
+QScrollBar::handle:vertical:hover { background: #BEC0C1; }
+QScrollBar::sub-line:vertical, QScrollBar::add-line:vertical { width: 0px; height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: transparent; }
+
+
+QToolButton#avatarToolButton { border: none; background: transparent; }
+
+/* 表情包面板 */
+QToolButton#faceBtn, QToolButton#handBtn, QToolButton#otherBtn { border: none; }
+QToolButton#faceBtn:hover, QToolButton#handBtn:hover, QToolButton#otherBtn:hover { background: #FAFAFA; border-radius:6px;}
+#facePageScrollArea, #handPageScrollArea, #otherPageScrollArea { border: none; background: #FAFAFA }

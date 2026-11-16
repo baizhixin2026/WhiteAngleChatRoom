@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="tcp_disconnect">image/tcp-2.png</file>
+        <file alias="tcp_connect">image/tcp-1.png</file>
+        <file>style.qss</file>
+        <file>image/button/userManagement-1.png</file>
+        <file>image/button/dataQuery-1.png</file>
+        <file>image/button/sqlState-1.png</file>
+        <file>image/button/sqlState-2.png</file>
+    </qresource>
+</RCC>

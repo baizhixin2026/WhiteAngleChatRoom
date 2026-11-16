@@ -1,0 +1,23 @@
+/* 背景色 */
+QWidget#side_widget { background-color: #404142; }
+QWidget#top_widget { background-color: #D0D0D0; }
+QFrame#users_frame { border: none; background-color: #EFEFEF; }
+QTableView#userTableView {border: none; }
+
+/* 侧边导航栏 按钮 三态：普通/悬停/选中 */
+QToolButton#users_toolButton, QToolButton#online_toolButton, QToolButton#manage_toolButton, QToolButton#files_toolButton, QToolButton#log_toolButton{
+    border: none;
+    background-color: #505152;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+QToolButton#users_toolButton:hover, QToolButton#online_toolButton:hover,QToolButton#manage_toolButton:hover, QToolButton#files_toolButton:hover, QToolButton#log_toolButton:hover{
+    background-color: #606162;
+}
+QToolButton#users_toolButton:checked, QToolButton#online_toolButton:checked,QToolButton#manage_toolButton:checked, QToolButton#files_toolButton:checked, QToolButton#log_toolButton:checked {
+    background-color: #0099FF;
+}
+
+QPushButton#sqlStateBtn { border: none; }
+
