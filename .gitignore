@@ -1,0 +1,24 @@
+# 告诉 Git：哪些文件/目录不要纳入版本控制。
+
+# Qt Creator 本机配置
+*.user
+*.pro.user
+.qmake.stash
+
+# 构建产物
+build*/
+build-*/
+debug/
+release/
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.dylib
+*.pdb
+
+# 其他
+.DS_Store
+*.log
