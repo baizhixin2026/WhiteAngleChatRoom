@@ -6,19 +6,16 @@
 .qmake.stash
 
 # 构建产物
-build*/
 build-*/
-debug/
-release/
 *.o
-*.obj
-*.so
-*.a
-*.dll
-*.exe
-*.dylib
-*.pdb
+moc_*
+ui_*.h
+qrc_*.cpp
 
 # 其他
 .DS_Store
 *.log
+
+# 临时快照（不是源码）
+all_client_code.txt
+all_server_code.txt
